@@ -1,6 +1,8 @@
 // src/app/gallery/page.js
-import Navbar from '../components/Navbar';
+
 import Footer from '../components/Footer';
+
+
 
 // export default function Gallery() {
 //   return (
@@ -22,19 +24,7 @@ export default function Gallery() {
   return (
     <div className="font-sans">
       {/* Header */}
-      <header className="bg-gray-200 py-4">
-        <div className="container mx-auto flex justify-between items-center">
-          <div className="text-lg font-bold">Salon WOW</div>
-          <nav className="space-x-6">
-            <a href="#" className="text-gray-700">Home</a>
-            <a href="#" className="text-gray-700">About Us</a>
-            <a href="#" className="text-gray-700">Services</a>
-            <a href="#" className="text-gray-700">Pricing</a>
-            <a href="#" className="text-gray-700 font-semibold">Gallery</a>
-            <a href="#" className="text-white bg-black px-4 py-2 rounded-full">Book Now</a>
-          </nav>
-        </div>
-      </header>
+    
 
       {/* Main Section */}
       <main className="container mx-auto my-12 text-center">
