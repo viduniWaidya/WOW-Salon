@@ -26,15 +26,15 @@ export default function Gallery() {
       {/* Header */}
       <header className="bg-gray-100 py-4">
         <div className="container mx-auto flex justify-between items-center px-6">
-          <div className="text-xl font-bold">Salon WOW</div>
+          <div className="text-black text-xl font-bold">Salon WOW</div>
           <nav className="space-x-6">
-            <a href="#" className="hover:text-gray-700">Home</a>
-            <a href="#" className="hover:text-gray-700">About Us</a>
-            <a href="#" className="hover:text-gray-700">Services</a>
-            <a href="#" className="hover:text-gray-700">Pricing</a>
-            <a href="#" className="hover:text-gray-700">Gallery</a>
+            <a href="#" className="text-black hover:text-gray-700">Home</a>
+            <a href="#" className="text-black hover:text-gray-700">About Us</a>
+            <a href="#" className="text-black hover:text-gray-700">Services</a>
+            <a href="#" className="text-black hover:text-gray-700">Pricing</a>
+            <a href="#" className="text-black hover:text-gray-700">Gallery</a>
           </nav>
-          <a href="#" className="bg-black text-white py-2 px-4 rounded-full hover:bg-gray-800">Book Now</a>
+          <a href="#" className=" bg-black text-white py-2 px-4 rounded-full hover:bg-gray-800">Book Now</a>
         </div>
       </header>
 
@@ -43,7 +43,7 @@ export default function Gallery() {
         {/* Gallery Header */}
         <h1 className="text-4xl font-bold mb-4">Gallery – Discover the WOW Transformation</h1>
         <p className="text-gray-600 mb-8 max-w-xl mx-auto">
-          Step into the world of beauty, style, and grooming through our WOW Unisex Salon Gallery! Explore the transformations we create and get inspired for your next look.
+            Step into the world of beauty, style, and grooming through our Wow Unisex Salon Gallery! Explore the transformations we create and get inspired for your next look. From bold hair makeovers to flawless skin treatments, our gallery showcases the artistry, skill, and passion we put into every service.
         </p>
 
         {/* Services Section */}
@@ -54,6 +54,7 @@ export default function Gallery() {
           <h3 className="text-xl font-bold mb-4 uppercase">Haircuts & Styling</h3>
           <div className="grid grid-cols-3 gap-4">
             <Image src="/gallery/photo/1.png" alt="Haircut 1" width={300} height={400} />
+
             <Image src="/haircut3.jpg" alt="Haircut 3" width={300} height={400} />
           </div>
           <div className="grid grid-cols-2 gap-4 mt-4 justify-center">
