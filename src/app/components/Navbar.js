@@ -16,7 +16,7 @@ export default function Navbar() {
         {['Home', 'About Us', 'Services', 'Gallery', 'Booking'].map((item, index) => (
           <li key={index}>
             <Link
-              href={`/${item.toLowerCase().replace(/ /g, '')}`}
+              href={item === 'Home' ? '/' : item === 'About Us' ? '/about' : `/${item.toLowerCase().replace(/ /g, '')}`}
               className="relative text-lg md:text-xl font-Cinzel font-medium text-gray-700 hover:text-black transition-colors block after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-black after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
             >
               {item}
