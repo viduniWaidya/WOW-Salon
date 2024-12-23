@@ -5,8 +5,7 @@ import hero from './assets/images/hero.png'; // Import the image
 export default function Home() {
   return (
     <>
-   
-      <Image
+         <Image
           src={hero}         // Use the imported image
           alt="Salon interior"
           width={1750}       // Set the width
