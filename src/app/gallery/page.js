@@ -2,7 +2,10 @@
 
 import Footer from '../components/Footer';
 
-
+import wowlogo from '@/app/assets/images/wowlogo.png';
+import girl from '@/app/assets/images/girl.png';
+import hstyle2 from '@/app/assets/images/hstyle2.png';
+import hstyle1 from '@/app/assets/images/hstyle1.png';
 
 // export default function Gallery() {
 //   return (
@@ -28,6 +31,17 @@ export default function Gallery() {
         <div className="container mx-auto flex justify-between items-center px-6">
           <div className="text-black text-xl font-bold">Salon WOW</div>
           <nav className="space-x-6">
+        
+            
+          <div className="flex items-center space-x-2">
+              <Image 
+                src={wowlogo} // Use the imported image variable
+                alt="Wow Salon Logo"
+                width={50} 
+                height={50} 
+              />
+          </div>
+
             <a href="#" className="text-black hover:text-gray-700">Home</a>
             <a href="#" className="text-black hover:text-gray-700">About Us</a>
             <a href="#" className="text-black hover:text-gray-700">Services</a>
@@ -46,6 +60,11 @@ export default function Gallery() {
             Step into the world of beauty, style, and grooming through our Wow Unisex Salon Gallery! Explore the transformations we create and get inspired for your next look. From bold hair makeovers to flawless skin treatments, our gallery showcases the artistry, skill, and passion we put into every service.
         </p>
 
+
+
+
+
+
         {/* Services Section */}
         <h2 className="text-2xl font-bold mb-6 uppercase">Our Services in Action</h2>
 
@@ -53,15 +72,17 @@ export default function Gallery() {
         <section className="mb-12">
           <h3 className="text-xl font-bold mb-4 uppercase">Haircuts & Styling</h3>
           <div className="grid grid-cols-3 gap-4">
-            <Image src="/gallery/photo/1.png" alt="Haircut 1" width={300} height={400} />
+            <Image src={hstyle2} alt="Haircut 1" width={300} height={400} />
 
-            <Image src="/haircut3.jpg" alt="Haircut 3" width={300} height={400} />
+            <Image src={hstyle2} alt="Haircut 1" width={300} height={400} /> 
           </div>
           <div className="grid grid-cols-2 gap-4 mt-4 justify-center">
-            <Image src="/haircut4.jpg" alt="Haircut 4" width={300} height={400} />
-            <Image src="/haircut5.jpg" alt="Haircut 5" width={300} height={400} />
+            <Image src={hstyle2} alt="Haircut 1" width={300} height={400} />    
+            <Image src={hstyle1} alt="Haircut 1" width={300} height={400} />
           </div>
         </section>
+
+
 
 
         {/* Color Creations */}
