@@ -10,6 +10,10 @@ export default function Services() {
         <h1 className="text-3xl font-bold">Our Services</h1>
         <p>Explore the range of services we offer.</p>
       </div>
+      <div className="p-8">
+        <h1 className="text-3xl font-bold">Our Services</h1>
+        <p>Explore the range of services we offer.</p>
+      </div>
    
     </>
   );

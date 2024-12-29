@@ -1,31 +1,12 @@
-// src/app/gallery/page.js
-
-import Footer from '../components/Footer';
-
-import wowlogo from '@/app/assets/images/wowlogo.png';
-import girl from '@/app/assets/images/girl.png';
-import hstyle2 from '@/app/assets/images/hstyle2.png';
-import hstyle1 from '@/app/assets/images/hstyle1.png';
-
-// export default function Gallery() {
-//   return (
-//     <>
-  
-//       <div className="p-8">
-//         <h1 className="text-3xl font-bold">Gallery</h1>
-//         <p>Check out our beautiful work.</p>
-//       </div>
-  
-//     </>
-//   );
-// }
-
-
 import Image from 'next/image';
+import wowlogo from '@/app/assets/images/wowlogo.png';
+import layout1 from '@/app/assets/images/layout1.png';
+import layout2 from '@/app/assets/images/layout2.png';
+
 
 export default function Gallery() {
   return (
-    <div className="font-sans">
+    <div className="font-sans text-black">
       {/* Header */}
       <header className="bg-gray-100 py-4">
         <div className="container mx-auto flex justify-between items-center px-6">
@@ -59,11 +40,6 @@ export default function Gallery() {
         <p className="text-gray-600 mb-8 max-w-xl mx-auto">
             Step into the world of beauty, style, and grooming through our Wow Unisex Salon Gallery! Explore the transformations we create and get inspired for your next look. From bold hair makeovers to flawless skin treatments, our gallery showcases the artistry, skill, and passion we put into every service.
         </p>
-
-
-
-
-
 
         {/* Services Section */}
         <h2 className="text-2xl font-bold mb-6 uppercase">Our Services in Action</h2>
