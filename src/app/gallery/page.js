@@ -1,5 +1,12 @@
 import Image from 'next/image';
 import wowlogo from '@/app/assets/images/wowlogo.png';
+import col1 from '@/app/assets/images/col1.png';
+import color from '@/app/assets/images/color.png';
+import hstyle1 from '@/app/assets/images/hstyle1.png';
+import hstyle3 from '@/app/assets/images/hstyle3.png';
+import hstylebrown from '@/app/assets/images/hstylebrown.png';
+import hstyle2 from '@/app/assets/images/hstyle2.png';
+import bluehair from '@/app/assets/images/bluehair.png';
 
 export default function Gallery() {
   return (
@@ -46,33 +53,169 @@ export default function Gallery() {
         <h2 className="text-2xl font-bold  text-center text-black mb-4"
         style={{ fontFamily: 'Cinzel, serif' }} >Our Services in Action</h2> <br></br><br></br>
           
-          <h3 className="text-xl text-center text-black mb-4">Haircuts & Styling</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            <Image src="/assets/haircut1.jpg" alt="Haircut 1" width={400} height={400} className="rounded-lg" />
-            <Image src="/assets/haircut2.jpg" alt="Haircut 2" width={400} height={400} className="rounded-lg" />
-            <Image src="/assets/haircut3.jpg" alt="Haircut 3" width={400} height={400} className="rounded-lg" />
-          </div>
-        </section>
+          
+          <div className="flex items-center justify-center my-4">
+  <div className="w-10 border-t border-black"></div>
+  <h3 className="mx-4 text-black text-xl text-center uppercase" style={{ fontFamily: 'Cinzel, serif' }}>
+    Haircuts & Styling
+  </h3>
+  <div className="w-10 border-t border-black"></div>
+</div>
 
+
+              <div className="flex justify-center items-center">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                  <div className="relative group">
+                    <Image
+                      src={hstyle3}
+                      alt="Haircut 3"
+                      width={400}
+                      height={400}
+                      className="rounded-lg transform transition-transform duration-300 group-hover:scale-105 group-hover:shadow-lg"
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100 rounded-lg flex items-center justify-center">
+                      <p className="text-white text-lg font-semibold">Haircut 3</p>
+                    </div>
+                  </div>
+                  <div className="relative group">
+                    <Image
+                      src={hstylebrown}
+                      alt="Haircut 1"
+                      width={400}
+                      height={400}
+                      className="rounded-lg transform transition-transform duration-300 group-hover:scale-105 group-hover:shadow-lg"
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100 rounded-lg flex items-center justify-center">
+                      <p className="text-white text-lg font-semibold">Haircut 1</p>
+                    </div>
+                  </div>
+                  <div className="relative group">
+                    <Image
+                      src={hstyle1}
+                      alt="Haircut 2"
+                      width={400}
+                      height={400}
+                      className="rounded-lg transform transition-transform duration-300 group-hover:scale-105 group-hover:shadow-lg"
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100 rounded-lg flex items-center justify-center">
+                      <p className="text-white text-lg font-semibold">Haircut 2</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+        </section>
+<br></br>
         {/* Color Creations */}
         <section className="mb-12">
-          <h3 className="text-xl text-center text-black mb-4">Color Creations</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            <Image src="/assets/color1.jpg" alt="Color 1" width={400} height={400} className="rounded-lg" />
-            <Image src="/assets/color2.jpg" alt="Color 2" width={400} height={400} className="rounded-lg" />
-            <Image src="/assets/color3.jpg" alt="Color 3" width={400} height={400} className="rounded-lg" />
-          </div>
+          
+          <div className="flex items-center justify-center my-8">
+            <div className="w-10 border-t border-black"></div>
+            <h3 className="mx-4 text-black text-xl text-center uppercase " style={{ fontFamily: 'Cinzel, serif' }}>
+            Color Creations
+            </h3>
+            <div className="w-10 border-t border-black"></div>
+            </div>
+
+            
+            <div className="flex justify-center items-center">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                  <div className="relative group">
+                    <Image
+                      src={bluehair}
+                      alt="Haircut 3"
+                      width={400}
+                      height={400}
+                      className="rounded-lg transform transition-transform duration-300 group-hover:scale-105 group-hover:shadow-lg"
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100 rounded-lg flex items-center justify-center">
+                      <p className="text-white text-lg font-semibold">Haircut 3</p>
+                    </div>
+                  </div>
+                  <div className="relative group">
+                    <Image
+                      src={hstyle2}
+                      alt="Haircut 1"
+                      width={400}
+                      height={400}
+                      className="rounded-lg transform transition-transform duration-300 group-hover:scale-105 group-hover:shadow-lg"
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100 rounded-lg flex items-center justify-center">
+                      <p className="text-white text-lg font-semibold">Haircut 1</p>
+                    </div>
+                  </div>
+                  <div className="relative group">
+                    <Image
+                      src={color}
+                      alt="Haircut 2"
+                      width={400}
+                      height={400}
+                      className="rounded-lg transform transition-transform duration-300 group-hover:scale-105 group-hover:shadow-lg"
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100 rounded-lg flex items-center justify-center">
+                      <p className="text-white text-lg font-semibold">Haircut 2</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             
         </section>
 
         {/* The WOW Experience */}
         <section>
-          <h3 className="text-xl text-center text-black mb-4">The WOW Experience</h3>
-          <p className="text-black text-center mb-6">
-            Want to see the process in action? Watch our exclusive videos.
+         
+          <div className="flex items-center justify-center my-8">
+            <div className="w-10 border-t border-black"></div>
+            <h3 className="mx-4 text-black text-xl text-center uppercase " style={{ fontFamily: 'Cinzel, serif' }}>
+            The WOW Experience
+            </h3>
+            <div className="w-10 border-t border-black"></div>
+            </div>
+
+          <p className="text-black text-center mb-10">
+          Want to see the process in action? Watch our exclusive videos that take you behind the scenes of our most popular services. From the initial consultation to the final reveal, experience the Wow journey with us.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             <div className="w-full h-64 bg-gray-300 rounded-lg"></div>
-            <div className="w-full h-64 bg-gray-300 rounded-lg"></div>
+                    <video 
+                    className="w-full h-64 bg-gray-300 rounded-lg" 
+                    controls 
+                    >
+                    <source src="https://github.com/mSrishan/WOW-Salon/blob/thanushi/src/app/assets/images/video3.mp4" type="video/mp4" />
+                    
+                    </video>
+
+                    
+
+            
+                    <video 
+                    className="w-full h-64 bg-gray-300 rounded-lg" 
+                    autoPlay 
+                    muted 
+                    loop 
+                    playsInline
+                    >
+                    <source src="https://www.facebook.com/share/r/15ADZ8kGpg/" type="video/mp4" />
+                    Your browser does not support the video tag.
+                    </video>
+
+
+                    <div className="w-full h-64 bg-gray-300 rounded-lg">
+  <iframe
+    className="w-full h-full rounded-lg"
+    src="https://www.facebook.com/share/r/15ADZ8kGpg/"
+    frameBorder="0"
+    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+    allowFullScreen
+  ></iframe>
+</div>
+
+
+
             <div className="w-full h-64 bg-gray-300 rounded-lg"></div>
           </div>
         </section>
