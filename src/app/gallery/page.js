@@ -1,55 +1,32 @@
-import Image from 'next/image';
-import wowlogo from '@/app/assets/images/wowlogo.png';
-import col1 from '@/app/assets/images/col1.png';
-import color from '@/app/assets/images/color.png';
-import hstyle1 from '@/app/assets/images/hstyle1.png';
-import hstyle3 from '@/app/assets/images/hstyle3.png';
-import hstylebrown from '@/app/assets/images/hstylebrown.png';
-import hstyle2 from '@/app/assets/images/hstyle2.png';
-import bluehair from '@/app/assets/images/bluehair.png';
+
+// src/app/gallery/page.js
+
+import Image from 'next/image'; // Import the Next.js Image component
+
+// Import images from the specified path
+import img1 from '../assets/images/galleryImgs/1.png';
+import img2 from '../assets/images/galleryImgs/2.png';
+import img3 from '../assets/images/galleryImgs/3.png';
+import img4 from '../assets/images/galleryImgs/4.png';
+import img5 from '../assets/images/galleryImgs/5.png';
+import img6 from '../assets/images/galleryImgs/6.png';
 
 export default function Gallery() {
   return (
-    <div className="min-h-screen bg-gray-100">
-      {/* Header */}
-      <header className="bg-gray-200 py-4">
-        <div className="container mx-auto flex justify-between items-center px-12">
-          <div className="flex items-center">
-            <Image
-              src={wowlogo}
-              alt="Wow Salon Logo"
-              width={70}
-              height={70}
-            />
-          </div>
-          <nav className="space-x-7">
-            <a href="/" className="text-black hover:text-gray-600">Home</a>
-            <a href="/about" className="text-black hover:text-gray-600">About Us</a>
-            <a href="/services" className="text-black hover:text-gray-600">Services</a>
-            <a href="/gallery" className="text-black hover:text-gray-600">Gallery</a>
-          </nav>
-          <a href="/booking" className="bg-black text-white py-2 px-4 rounded-full hover:bg-gray-800">
-            Book Now
-          </a>
-        </div>
-      </header>
-
-      {/* Main Content */}
-      <main className="container mx-auto px-6 py-12">
-        <section className="text-center">
-        <h1 className="text-3xl font-bold text-black mb-4"
-        style={{ fontFamily: 'Cinzel, serif' }} >
-             GALLERY – DISCOVER THE WOW TRANSFORMATION
-        </h1>
-<br></br>
-            <p className="text-black mb-8 px-10 text-justify">
-                Step into the world of beauty, style, and grooming through our Wow Unisex Salon Gallery! Explore the transformations we create and get inspired for your next look. From bold hair makeovers to flawless skin treatments, our gallery showcases the artistry, skill, and passion we put into every service.
-            </p>
+    <div className="font-sans">
+      {/* Main Section */}
+      <main className="container mx-auto my-12 text-center">
+        {/* Gallery Header */}
+        <h1 className="text-4xl font-bold mb-4">Gallery – Discover the WOW Transformation</h1>
+        <p className="text-gray-600 mb-8 max-w-xl mx-auto">
+          Step into the world of beauty, style, and grooming through our Wow Unisex Salon Gallery! Explore the transformations we create and get inspired for your next look. From bold hair makeovers to flawless skin treatments, our gallery showcases the artistry, skill, and passion we put into every service.
+        </p>
 
         </section>
 
         {/* Services in Action */}
         <section className="mb-12">
+
         <h2 className="text-2xl font-bold  text-center text-black mb-4"
         style={{ fontFamily: 'Cinzel, serif' }} >Our Services in Action</h2> <br></br><br></br>
           
@@ -163,6 +140,31 @@ export default function Gallery() {
                 </div>
               </div>
              
+
+          <h3 className="text-xl font-bold mb-4 uppercase">Haircuts & Styling</h3>
+          <div className="grid grid-cols-3 gap-4">
+            <Image src={img1} alt="Haircut 1" width={300} height={400} />
+            <Image src={img2} alt="Haircut 2" width={300} height={400} />
+            <Image src={img3} alt="Haircut 3" width={300} height={400} />
+          </div>
+          <div className="grid grid-cols-2 gap-4 mt-4 justify-center">
+            <Image src={img4} alt="Haircut 4" width={300} height={400} />
+            <Image src={img5} alt="Haircut 5" width={300} height={400} />
+          </div>
+        </section>
+
+        {/* Color Creations */}
+        <section className="mb-12">
+          <h3 className="text-xl font-bold mb-4 uppercase">Color Creations</h3>
+          <div className="grid grid-cols-2 gap-4">
+            <Image src={img4} alt="Color 1" width={300} height={400} />
+            <Image src={img5} alt="Color 2" width={300} height={400} />
+          </div>
+          <div className="grid grid-cols-2 gap-4 mt-4">
+            <Image src={img3} alt="Color 3" width={300} height={400} />
+            <Image src={img6} alt="Color 4" width={300} height={400} />
+          </div>
+
         </section>
 
         {/* The WOW Experience */}
@@ -213,35 +215,10 @@ export default function Gallery() {
     allowFullScreen
   ></iframe>
 </div>
-
-
-
             <div className="w-full h-64 bg-gray-300 rounded-lg"></div>
           </div>
         </section>
       </main>
-
-      {/* Footer */}
-      <footer className="bg-gray-200 py-8">
-        <div className="container mx-auto text-center">
-          <Image
-            src="/assets/logo.png"
-            alt="Wow Salon Logo"
-            width={50}
-            height={50}
-            className="mx-auto mb-4"
-          />
-          <p className="text-black mb-4">Come in for a visit, and your transformation could be featured next in our gallery!</p>
-          <div className="flex justify-center space-x-4 mb-4">
-            <a href="#" className="text-black hover:text-gray-600">Facebook</a>
-            <a href="#" className="text-black hover:text-gray-600">TikTok</a>
-            <a href="#" className="text-black hover:text-gray-600">Instagram</a>
-          </div>
-          <p className="text-black text-sm">
-            Copyright © 2024 Wow Unisex Salon. All Rights Reserved.
-          </p>
-        </div>
-      </footer>
     </div>
   );
 }
