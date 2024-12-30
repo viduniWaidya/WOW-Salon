@@ -7,6 +7,7 @@ import Image from 'C:\Users\win10\Pictures\WOW-Salon\src\app\assets\images';
 
 export default function Services() {
   return (
+
     <div className="bg-gray-100 text-gray-800">
       {/* Hero Section */}
       <section className="bg-white py-12 text-center">
@@ -133,5 +134,6 @@ export default function Services() {
         </div>
       </section>
     </div>
+
   );
 }
