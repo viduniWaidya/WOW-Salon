@@ -1,14 +1,22 @@
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import ab1 from '../assets/images/ab1.jpg';
+import ab2 from '../assets/images/ab2.jpg';
 
 export default function About() {
   return (
     <>
-      
+      {/* Welcome Section */}
       <div className="py-8 bg-gray-100">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-3xl font-bold text-gray-800 text-center font-cinzel">Welcome to Wow Unisex Salon – Where Style Meets Perfection</h1>
+            {/* Image on the left */}
+            <img
+              src={ab1}
+              alt="Salon Image 1"
+              className="w-1/2 h-auto object-cover mr-4 rounded-lg"
+            />
+            {/* Text */}
           <p className="mt-4 -ml-60 mr-80 text-gray-600 text-left text-justify font-cormorant">At Wow Unisex Salon, we believe in more than just beauty. We believe in unlocking confidence, enhancing individuality, and providing an unforgettable experience that leaves you feeling refreshed and ready to take on the world. Our salon is a modern oasis where trends come to life, and personal style is celebrated.</p>
         </div>
       </div>
