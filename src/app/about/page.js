@@ -1,7 +1,9 @@
+
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import ab1 from '../assets/images/ab1.jpg';
 import ab2 from '../assets/images/ab2.jpg';
+
 
 export default function About() {
   return (

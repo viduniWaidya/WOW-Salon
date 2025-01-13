@@ -19,7 +19,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Cinzel', serif; /* Updated to use Cinzel font */
 }
 
 @layer utilities {
@@ -27,4 +27,3 @@ body {
     text-wrap: balance;
   }
 }
-
